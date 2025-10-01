@@ -146,7 +146,80 @@ Template Name: Homepage Template
                 </div>
             </div>
         </div>
-
+        <div class="bottom">
+            <div class="one-rect">
+                <div class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/p1.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="title">
+                    PAW VISITS
+                </div>
+                <div class="subtitle">
+                    Making the elderly smile with dog-friendly visits to aged care homes.
+                </div>
+                <div class="link">
+                    <a href="">
+                        LEARN MORE <span> <img src="<?php echo get_template_directory_uri(); ?>/images/vector.png"
+                                alt="<?php bloginfo('name'); ?>"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="one-rect">
+                <div class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/p2.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="title">
+                    THE HILLS WOMEN’S SHED
+                </div>
+                <div class="subtitle">
+                    Embracing deeper social connections through regular community meet-ups and female-empowered activities.
+                </div>
+                <div class="link">
+                    <a href="">
+                        LEARN MORE <span> <img src="<?php echo get_template_directory_uri(); ?>/images/vector.png"
+                                alt="<?php bloginfo('name'); ?>"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="one-rect">
+                <div class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/p3.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="title">
+                    YOUNG HEALTHY MINDS
+                </div>
+                <div class="subtitle">
+                    Working with high school students to improve mental health and smash the stigma.
+                </div>
+                <div class="link">
+                    <a href="">
+                        LEARN MORE <span> <img src="<?php echo get_template_directory_uri(); ?>/images/vector.png"
+                                alt="<?php bloginfo('name'); ?>"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="one-rect">
+                <div class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/p1.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="title">
+                    COMMUNITY ENGAGEMENT
+                </div>
+                <div class="subtitle">
+                    Organising community talks to promote positive mental wellbeing.
+                </div>
+                <div class="link">
+                    <a href="">
+                        LEARN MORE <span> <img src="<?php echo get_template_directory_uri(); ?>/images/vector.png"
+                                alt="<?php bloginfo('name'); ?>"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <?php
