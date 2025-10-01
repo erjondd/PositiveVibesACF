@@ -55,6 +55,100 @@ Template Name: Homepage Template
         </div>
     </div>
 </section>
+<section class="under-hero">
+    <div class="container">
+        <div class="top">
+            <div class="one-rect">
+                <div class="title">
+                    42.9% of people aged 16–85 years
+                    positive mental health
+                </div>
+                <div class="subtitle">
+                    had experienced a mental disorder at some time in their life
+                </div>
+            </div>
+            <div class="one-rect">
+                <div class="title">
+                    21.5% of people
+                </div>
+                <div class="subtitle">
+                    had a 12-month mental disorder
+                </div>
+            </div>
+            <div class="one-rect">
+                <div class="title">
+                    17.2% of people aged 16–85 years
+                </div>
+                <div class="subtitle">
+                    had a 12-month anxiety disorder
+                </div>
+            </div>
+            <div class="one-rect">
+                <div class="title">
+                    38.8% of people aged 16–24 years
+                </div>
+                <div class="subtitle">
+                    had a 12-month mental disorder
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            *Statistics from the 2020-2022 National Study of Mental Health and Wellbeing from the Australian Bureau of Statistics.
+        </div>
+    </div>
+</section>
+<section class="impact">
+    <div class="container">
+        <div class="top">
+            <div class="title">Our impact on the community</div>
+            <div class="our-blogs">
+                <div class="one-blog">
+                    <div class="left">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/blog1.png"
+                            alt="<?php bloginfo('name'); ?>">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            Communities, connections and conversations
+                        </div>
+                        <div class="description">
+                            We collaborate with the community to raise awareness and encourage open dialogue around mental health.
+                        </div>
+                    </div>
+                </div>
+                <div class="one-blog">
+                    <div class="left">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/blog2.png"
+                            alt="<?php bloginfo('name'); ?>">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            Creating kinship within the community
+                        </div>
+                        <div class="description">
+                            Through various activities and community partnerships, we work with young and old to deepen connections and provide mental health guidance.
+                        </div>
+                    </div>
+                </div>
+                <div class="one-blog">
+                    <div class="left">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/blog3.png"
+                            alt="<?php bloginfo('name'); ?>">
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            Local community involvement​
+                        </div>
+                        <div class="description">
+                            We run a number of different programs within the Baulkham Hills and surrounding areas in New South Wales.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 <?php
 get_footer();
 ?>
