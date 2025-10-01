@@ -222,6 +222,106 @@ Template Name: Homepage Template
         </div>
     </div>
 </section>
+<section class="donate">
+    <div class="container">
+        <div class="title">
+            Donating to the Positive Vibes Foundation
+        </div>
+        <div class="subtitle">
+            Want to make an impact?<br />
+            If you are passionate about improving the lives of those in the local community
+            – both young and old – then consider contributing to the Positive Vibes Foundation.
+            No matter the size of your donation, it will make a difference to someone’s life.
+            As a registered charity, any donations over $2 are tax deductible.
+        </div>
+        <div class="button">
+            <a href="">
+                MAKE A DONATION
+            </a>
+        </div>
+    </div>
+</section>
+<section class="news">
+    <div class="container">
+        <div class="all-news">
+            <div class="one-blog">
+                <div class="left">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/news1.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="right">
+                    <div class="title">
+                        A bright night up in lights: The Annual Positive Vibes Gala Dinner​
+                    </div>
+                    <div class="description">
+                        This year’s 2023 gala ball was hosted by Biviano’s Restaurant in Dural.  Thank you to all those who attended and donated to Biviano’s Hills Community Gala Ball on 31 August in support of the Positive Vibes Foundation.
+                    </div>
+                </div>
+            </div>
+            <div class="one-blog">
+                <div class="left">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/news2.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="right">
+                    <div class="title">
+                        UPmarket
+                    </div>
+                    <div class="description">
+                        A family and pet-friendly monthly market to get out into the community and discuss positive mental health. 
+                        The stall is staffed by welcoming mental health professionals who are on-hand to answer any questions and encourage conversation around mental wellness topics.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="slider">
+    <div class="feedback">
+        <div class="left">
+            <div class="title">
+                Feedback about the foundation
+            </div>
+            <div class="description">
+                “I retired in March 2022 and have been attending The Hills Women's Shed for about 3 months, I heard about THWS through a friend who has been going for some time. I look forward to Thursdays and doing interesting crafts, having cooking lessons and learning all sorts of new things, but what I especially like is meeting new people and making new friends. It's a safe, caring environment and I'm so happy to be included.”
+            </div>
+            <div class="info">
+                <div class="left-info">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/circle.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="right-info">
+                    <div class="info-text">
+                        <div class="title-info">
+                            Heather Ross
+                        </div>
+                        <div class="subtitle-info">
+                            The Hills Women’s Shed member
+                        </div>
+                    </div>
+                    <div class="arrows">
+                        <div class="arrow">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/left-arrow.png"
+                                alt="<?php bloginfo('name'); ?>">
+                        </div>
+                        <div class="arrow">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/right-arrow.png"
+                                alt="<?php bloginfo('name'); ?>">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/hero2.png"
+                alt="<?php bloginfo('name'); ?>">
+        </div>
+    </div>
+</section>
+<section class="white-space">
+
+</section>
 <?php
 get_footer();
 ?>
