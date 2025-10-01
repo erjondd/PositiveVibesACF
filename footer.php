@@ -50,7 +50,7 @@
                             alt="<?php bloginfo('name'); ?>">
                     </div>
                     <div class="one-social">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/yt.png"
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/youtube.png"
                             alt="<?php bloginfo('name'); ?>">
                     </div>
                 </div>
