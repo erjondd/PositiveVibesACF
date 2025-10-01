@@ -26,7 +26,9 @@
 
 <body <?php body_class(); ?>>
 
-
+    <div class="top-head">
+        You can make an impact. <a href="">Donate</a>
+    </div>
     <header class="header">
         <div class="container">
 
