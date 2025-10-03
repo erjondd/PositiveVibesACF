@@ -11,16 +11,18 @@ Template Name: Homepage Template
 ?>
 
 <section class="hero">
+    <img src="<?php echo get_field('hero_image'); ?>" 
+        alt="<?php bloginfo('name'); ?>" class="hero-imagee">
     <div class="container">
         <div class="subtitle">
-            Sparking conversations to improve lives
+            <?php the_field('hero_title'); ?>
         </div>
         <div class="title">
-            Promoting positive mental health
+            <?php the_field('hero_subtitle'); ?>
         </div>
         <div class="button">
-            <a href="">
-                GET INVOLVED
+            <a href="<?php the_field('hero_button_URL'); ?>">
+                <?php the_field('hero_button_text'); ?>
             </a>
         </div>
     </div>

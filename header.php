@@ -31,7 +31,11 @@
     </div>
     <header class="header">
         <div class="container">
-
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="logo-and-phone">
                 <div class="logo">
                     <a href="<?php echo home_url(); ?>">

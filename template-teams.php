@@ -42,7 +42,7 @@ Template Name: Teams Template
             </div>
             <div class="a-team">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team1.png"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team3.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
@@ -54,7 +54,19 @@ Template Name: Teams Template
             </div>
             <div class="a-team">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team1.png"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team4.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="a-title">
+                  Bob Croft (Qijian Ge) MAMI, CPM
+                </div>
+                <div class="a-position">
+                    Fractional CMO
+                </div>
+            </div>
+            <div class="a-team">
+                <div class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team5.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
@@ -66,96 +78,77 @@ Template Name: Teams Template
             </div>
             <div class="a-team">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team1.png"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team6.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-                    Albert Seah FCA, CTA, LL.M, LL.B, B.Ec (Acctg)
-                </div>
+Brooke Collins OAM, MAICD                </div>
                 <div class="a-position">
                     Director
                 </div>
             </div>
             <div class="a-team">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team1.png"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team7.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-                    Albert Seah FCA, CTA, LL.M, LL.B, B.Ec (Acctg)
+Dr Juanita Ruiz, FRACGP, MB BS, AKC, B Sc, LRSM                </div>
+                <div class="a-position">
+                    Community Liaison Officer
                 </div>
+            </div>
+            <div class="a-team">
+                <div class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team8.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="a-title">
+Jeanette Farrell OAM                </div>
                 <div class="a-position">
                     Director
                 </div>
             </div>
             <div class="a-team">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team1.png"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team9.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-                    Albert Seah FCA, CTA, LL.M, LL.B, B.Ec (Acctg)
+Mario Rodrigues FCA, ACA, B Sc (Econ)                </div>
+                <div class="a-position">
+                    Chair
                 </div>
+            </div>
+            <div class="a-team">
+                <div class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team10.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="a-title">
+Michael Furcciniti                </div>
+                <div class="a-position">
+                    Social Media Coordinator – Young Healthy Minds
+                </div>
+            </div>
+            <div class="a-team">
+                <div class="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team11.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="a-title">
+Peter Casbolt                </div>
                 <div class="a-position">
                     Director
                 </div>
             </div>
             <div class="a-team">
                 <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team1.png"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team12.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-                    Albert Seah FCA, CTA, LL.M, LL.B, B.Ec (Acctg)
-                </div>
-                <div class="a-position">
-                    Director
-                </div>
-            </div>
-            <div class="a-team">
-                <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team1.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="a-title">
-                    Albert Seah FCA, CTA, LL.M, LL.B, B.Ec (Acctg)
-                </div>
-                <div class="a-position">
-                    Director
-                </div>
-            </div>
-            <div class="a-team">
-                <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team1.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="a-title">
-                    Albert Seah FCA, CTA, LL.M, LL.B, B.Ec (Acctg)
-                </div>
-                <div class="a-position">
-                    Director
-                </div>
-            </div>
-            <div class="a-team">
-                <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team1.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="a-title">
-                    Albert Seah FCA, CTA, LL.M, LL.B, B.Ec (Acctg)
-                </div>
-                <div class="a-position">
-                    Director
-                </div>
-            </div>
-            <div class="a-team">
-                <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team1.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="a-title">
-                    Albert Seah FCA, CTA, LL.M, LL.B, B.Ec (Acctg)
-                </div>
+Peter Truong                </div>
                 <div class="a-position">
                     Director
                 </div>
