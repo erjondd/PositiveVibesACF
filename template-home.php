@@ -6,12 +6,14 @@ get_header();
 Template Name: Homepage Template
 */
 
+$link = get_field('hero_button_url', get_the_ID());
 
+$donation_link = get_field('donation_button_url'); // returns array
 
 ?>
 
 <section class="hero">
-    <img src="<?php echo get_field('hero_image'); ?>" 
+    <img src="<?php echo get_field('hero_image'); ?>"
         alt="<?php bloginfo('name'); ?>" class="hero-imagee">
     <div class="container">
         <div class="subtitle">
@@ -21,7 +23,7 @@ Template Name: Homepage Template
             <?php the_field('hero_subtitle'); ?>
         </div>
         <div class="button">
-            <a href="<?php the_field('hero_button_URL'); ?>">
+            <a href="<?php echo $link ?>">
                 <?php the_field('hero_button_text'); ?>
             </a>
         </div>
@@ -30,215 +32,188 @@ Template Name: Homepage Template
 <section class="logos">
     <div class="container">
         <div class="all-logos">
-            <div class="one-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo1.png"
-                    alt="<?php bloginfo('name'); ?>">
-            </div>
-            <div class="one-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo2.png"
-                    alt="<?php bloginfo('name'); ?>">
-            </div>
-            <div class="one-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo3.png"
-                    alt="<?php bloginfo('name'); ?>">
-            </div>
-            <div class="one-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo4.png"
-                    alt="<?php bloginfo('name'); ?>">
-            </div>
-            <div class="one-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo5.png"
-                    alt="<?php bloginfo('name'); ?>">
-            </div>
-            <div class="one-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo6.png"
-                    alt="<?php bloginfo('name'); ?>">
-            </div>
+            <?php if (have_rows('logos')): ?>
+                <?php while (have_rows('logos')) : the_row();
+                    $logo = get_sub_field('image');
+                    if (!empty($logo)): ?>
+                        <div class="one-logo">
+                            <img src="<?php echo esc_url($logo); ?>"
+                                alt="<?php bloginfo('name'); ?>">
+                        </div>
+                    <?php endif; ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </div>
     </div>
 </section>
 <section class="under-hero">
     <div class="container">
         <div class="top">
-            <div class="one-rect">
-                <div class="title">
-                    42.9% of people aged 16–85 years
-                    positive mental health
-                </div>
-                <div class="subtitle">
-                    had experienced a mental disorder at some time in their life
-                </div>
-            </div>
-            <div class="one-rect">
-                <div class="title">
-                    21.5% of people
-                </div>
-                <div class="subtitle">
-                    had a 12-month mental disorder
-                </div>
-            </div>
-            <div class="one-rect">
-                <div class="title">
-                    17.2% of people aged 16–85 years
-                </div>
-                <div class="subtitle">
-                    had a 12-month anxiety disorder
-                </div>
-            </div>
-            <div class="one-rect">
-                <div class="title">
-                    38.8% of people aged 16–24 years
-                </div>
-                <div class="subtitle">
-                    had a 12-month mental disorder
-                </div>
-            </div>
+            <?php if (have_rows('first_reactangle')): ?>
+                <?php while (have_rows('first_reactangle')) : the_row();
+                    $title = get_sub_field('title');
+                    $subtitle = get_sub_field('description');
+                ?>
+                    <div class="one-rect">
+                        <?php if ($title): ?>
+                            <div class="title"><?php echo esc_html($title); ?></div>
+                        <?php endif; ?>
+                        <?php if ($subtitle): ?>
+                            <div class="subtitle"><?php echo esc_html($subtitle); ?></div>
+                        <?php endif; ?>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php if (have_rows('second_rectangle')): ?>
+                <?php while (have_rows('second_rectangle')) : the_row();
+                    $title = get_sub_field('title');
+                    $subtitle = get_sub_field('description');
+                ?>
+                    <div class="one-rect">
+                        <?php if ($title): ?>
+                            <div class="title"><?php echo esc_html($title); ?></div>
+                        <?php endif; ?>
+                        <?php if ($subtitle): ?>
+                            <div class="subtitle"><?php echo esc_html($subtitle); ?></div>
+                        <?php endif; ?>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php if (have_rows('third_rectangle')): ?>
+                <?php while (have_rows('third_rectangle')) : the_row();
+                    $title = get_sub_field('title');
+                    $subtitle = get_sub_field('description');
+                ?>
+                    <div class="one-rect">
+                        <?php if ($title): ?>
+                            <div class="title"><?php echo esc_html($title); ?></div>
+                        <?php endif; ?>
+                        <?php if ($subtitle): ?>
+                            <div class="subtitle"><?php echo esc_html($subtitle); ?></div>
+                        <?php endif; ?>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php if (have_rows('fourth_reactangle')): ?>
+                <?php while (have_rows('fourth_reactangle')) : the_row();
+                    $title = get_sub_field('title');
+                    $subtitle = get_sub_field('description');
+                ?>
+                    <div class="one-rect">
+                        <?php if ($title): ?>
+                            <div class="title"><?php echo esc_html($title); ?></div>
+                        <?php endif; ?>
+                        <?php if ($subtitle): ?>
+                            <div class="subtitle"><?php echo esc_html($subtitle); ?></div>
+                        <?php endif; ?>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </div>
         <div class="bottom">
-            *Statistics from the 2020-2022 National Study of Mental Health and Wellbeing from the Australian Bureau of Statistics.
+            <?php the_field('under_rectangle_text'); ?>
         </div>
     </div>
 </section>
 <section class="impact">
     <div class="container">
         <div class="top">
-            <div class="title">Our impact on the community</div>
+            <div class="title"> <?php the_field('impact_title'); ?>
+            </div>
             <div class="our-blogs">
-                <div class="one-blog">
-                    <div class="left">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/blog1.png"
-                            alt="<?php bloginfo('name'); ?>">
-                    </div>
-                    <div class="right">
-                        <div class="title">
-                            Communities, connections and conversations
+
+                <?php if (have_rows('impact_repeater')): ?>
+                    <?php while (have_rows('impact_repeater')) : the_row();
+                        $image = get_sub_field('image'); // URL or Array
+                        $title = get_sub_field('title');
+                        $description = get_sub_field('description');
+
+                        // If using image array, get URL like this:
+                        if (is_array($image)) {
+                            $image_url = $image['url'];
+                        } else {
+                            $image_url = $image;
+                        }
+                    ?>
+                        <div class="one-blog">
+                            <div class="left">
+                                <?php if ($image_url): ?>
+                                    <img src="<?php echo esc_url($image_url); ?>">
+                                <?php endif; ?>
+                            </div>
+                            <div class="right">
+                                <?php if ($title): ?>
+                                    <div class="title"><?php echo esc_html($title); ?></div>
+                                <?php endif; ?>
+                                <?php if ($description): ?>
+                                    <div class="description"><?php echo esc_html($description); ?></div>
+                                <?php endif; ?>
+                            </div>
                         </div>
-                        <div class="description">
-                            We collaborate with the community to raise awareness and encourage open dialogue around mental health.
-                        </div>
-                    </div>
-                </div>
-                <div class="one-blog">
-                    <div class="left">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/blog2.png"
-                            alt="<?php bloginfo('name'); ?>">
-                    </div>
-                    <div class="right">
-                        <div class="title">
-                            Creating kinship within the community
-                        </div>
-                        <div class="description">
-                            Through various activities and community partnerships, we work with young and old to deepen connections and provide mental health guidance.
-                        </div>
-                    </div>
-                </div>
-                <div class="one-blog">
-                    <div class="left">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/blog3.png"
-                            alt="<?php bloginfo('name'); ?>">
-                    </div>
-                    <div class="right">
-                        <div class="title">
-                            Local community involvement​
-                        </div>
-                        <div class="description">
-                            We run a number of different programs within the Baulkham Hills and surrounding areas in New South Wales.
-                        </div>
-                    </div>
-                </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+
+
             </div>
         </div>
         <div class="bottom">
-            <div class="one-rect">
-                <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/p1.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="title">
-                    PAW VISITS
-                </div>
-                <div class="subtitle">
-                    Making the elderly smile with dog-friendly visits to aged care homes.
-                </div>
-                <div class="link">
-                    <a href="">
-                        LEARN MORE <span> <img src="<?php echo get_template_directory_uri(); ?>/images/vector.png"
-                                alt="<?php bloginfo('name'); ?>"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="one-rect">
-                <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/p2.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="title">
-                    THE HILLS WOMEN’S SHED
-                </div>
-                <div class="subtitle">
-                    Embracing deeper social connections through regular community meet-ups and female-empowered activities.
-                </div>
-                <div class="link">
-                    <a href="">
-                        LEARN MORE <span> <img src="<?php echo get_template_directory_uri(); ?>/images/vector.png"
-                                alt="<?php bloginfo('name'); ?>"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="one-rect">
-                <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/p3.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="title">
-                    YOUNG HEALTHY MINDS
-                </div>
-                <div class="subtitle">
-                    Working with high school students to improve mental health and smash the stigma.
-                </div>
-                <div class="link">
-                    <a href="">
-                        LEARN MORE <span> <img src="<?php echo get_template_directory_uri(); ?>/images/vector.png"
-                                alt="<?php bloginfo('name'); ?>"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="one-rect">
-                <div class="image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/p1.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="title">
-                    COMMUNITY ENGAGEMENT
-                </div>
-                <div class="subtitle">
-                    Organising community talks to promote positive mental wellbeing.
-                </div>
-                <div class="link">
-                    <a href="">
-                        LEARN MORE <span> <img src="<?php echo get_template_directory_uri(); ?>/images/vector.png"
-                                alt="<?php bloginfo('name'); ?>"></span>
-                    </a>
-                </div>
-            </div>
+            <?php if (have_rows('pages_repeater')): ?>
+                <?php while (have_rows('pages_repeater')) : the_row();
+                    $image = get_sub_field('image');
+                    $title = get_sub_field('title');
+                    $subtitle = get_sub_field('description');
+                    $link = get_sub_field('link', get_the_ID());
+                    // Handle image array vs URL
+                    if (is_array($image)) {
+                        $image_url = $image['url'];
+                    } else {
+                        $image_url = $image;
+                    }
+                ?>
+                    <div class="one-rect">
+                        <?php if ($image_url): ?>
+                            <div class="image">
+                                <img src="<?php echo esc_url($image_url); ?>">
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if ($title): ?>
+                            <div class="title"><?php echo esc_html($title); ?></div>
+                        <?php endif; ?>
+
+                        <?php if ($subtitle): ?>
+                            <div class="subtitle"><?php echo esc_html($subtitle); ?></div>
+                        <?php endif; ?>
+
+
+                        <div class="link">
+                            <a href="<?php echo esc_url($link); ?>">
+                                LEARN MORE
+                                <span><img src="<?php echo get_template_directory_uri(); ?>/images/vector.png"
+                                        alt="<?php bloginfo('name'); ?>"></span>
+                            </a>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+
+
+
         </div>
     </div>
 </section>
 <section class="donate">
     <div class="container">
         <div class="title">
-            Donating to the Positive Vibes Foundation
+            <?php the_field('donation_title'); ?>
         </div>
         <div class="subtitle">
-            Want to make an impact?<br />
-            If you are passionate about improving the lives of those in the local community
-            – both young and old – then consider contributing to the Positive Vibes Foundation.
-            No matter the size of your donation, it will make a difference to someone’s life.
-            As a registered charity, any donations over $2 are tax deductible.
+            <?php the_field('donation_subtitle'); ?>
+
         </div>
         <div class="button">
             <a href="">
-                MAKE A DONATION
+                <?php the_field(selector: 'donation_button_text'); ?>
             </a>
         </div>
     </div>
