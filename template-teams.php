@@ -7,9 +7,11 @@ Template Name: Teams Template
 */
 
 ?>
-<section class="hero">
+<section class="another-hero">
+    <img src="<?php echo get_field('hero_image'); ?>"
+        alt="<?php bloginfo('name'); ?>" class="hero-image">
     <div class="container">
-        <div class="title">Teams</div>
+        <div class="title"><?php echo get_field('hero_title'); ?></div>
     </div>
 </section>
 <section class="team">
@@ -58,7 +60,7 @@ Template Name: Teams Template
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-                  Bob Croft (Qijian Ge) MAMI, CPM
+                    Bob Croft (Qijian Ge) MAMI, CPM
                 </div>
                 <div class="a-position">
                     Fractional CMO
@@ -82,7 +84,7 @@ Template Name: Teams Template
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-Brooke Collins OAM, MAICD                </div>
+                    Brooke Collins OAM, MAICD </div>
                 <div class="a-position">
                     Director
                 </div>
@@ -93,7 +95,7 @@ Brooke Collins OAM, MAICD                </div>
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-Dr Juanita Ruiz, FRACGP, MB BS, AKC, B Sc, LRSM                </div>
+                    Dr Juanita Ruiz, FRACGP, MB BS, AKC, B Sc, LRSM </div>
                 <div class="a-position">
                     Community Liaison Officer
                 </div>
@@ -104,7 +106,7 @@ Dr Juanita Ruiz, FRACGP, MB BS, AKC, B Sc, LRSM                </div>
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-Jeanette Farrell OAM                </div>
+                    Jeanette Farrell OAM </div>
                 <div class="a-position">
                     Director
                 </div>
@@ -115,7 +117,7 @@ Jeanette Farrell OAM                </div>
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-Mario Rodrigues FCA, ACA, B Sc (Econ)                </div>
+                    Mario Rodrigues FCA, ACA, B Sc (Econ) </div>
                 <div class="a-position">
                     Chair
                 </div>
@@ -126,7 +128,7 @@ Mario Rodrigues FCA, ACA, B Sc (Econ)                </div>
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-Michael Furcciniti                </div>
+                    Michael Furcciniti </div>
                 <div class="a-position">
                     Social Media Coordinator – Young Healthy Minds
                 </div>
@@ -137,7 +139,7 @@ Michael Furcciniti                </div>
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-Peter Casbolt                </div>
+                    Peter Casbolt </div>
                 <div class="a-position">
                     Director
                 </div>
@@ -148,7 +150,7 @@ Peter Casbolt                </div>
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title">
-Peter Truong                </div>
+                    Peter Truong </div>
                 <div class="a-position">
                     Director
                 </div>

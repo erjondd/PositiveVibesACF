@@ -209,11 +209,13 @@ $donation_link = get_field('donation_button_url'); // returns array
         </div>
         <div class="subtitle">
             <?php the_field('donation_subtitle'); ?>
-
         </div>
         <div class="button">
-            <a href="">
-                <?php the_field(selector: 'donation_button_text'); ?>
+
+            <a href="
+             <?php the_field('donation_button_url'); ?>">
+                <?php the_field('donation_button_text'); ?>
+
             </a>
         </div>
     </div>
@@ -221,38 +223,41 @@ $donation_link = get_field('donation_button_url'); // returns array
 <section class="news">
     <div class="container">
         <div class="all-news">
-            <div class="one-blog">
-                <div class="left">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/news1.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="right">
-                    <div class="title">
-                        A bright night up in lights: The Annual Positive Vibes Gala Dinner​
-                    </div>
-                    <div class="description">
-                        This year’s 2023 gala ball was hosted by Biviano’s Restaurant in Dural.  Thank you to all those who attended and donated to Biviano’s Hills Community Gala Ball on 31 August in support of the Positive Vibes Foundation.
-                    </div>
-                </div>
-            </div>
-            <div class="one-blog">
-                <div class="left">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/news2.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="right">
-                    <div class="title">
-                        UPmarket
-                    </div>
-                    <div class="description">
-                        A family and pet-friendly monthly market to get out into the community and discuss positive mental health. 
-                        The stall is staffed by welcoming mental health professionals who are on-hand to answer any questions and encourage conversation around mental wellness topics.
-                    </div>
-                </div>
-            </div>
+            <div class="all-news">
+                <?php if (have_rows('another_repeater')): ?>
+                    <?php while (have_rows('another_repeater')) : the_row();
+                        $image = get_sub_field('image');
+                        $title = get_sub_field('title');
+                        $description = get_sub_field('description');
 
+                        // Handle image array vs URL
+                        if (is_array($image)) {
+                            $image_url = $image['url'];
+                            $image_alt = $image['alt'] ?: get_bloginfo('name');
+                        } else {
+                            $image_url = $image;
+                            $image_alt = get_bloginfo('name');
+                        }
+                    ?>
+                        <div class="one-blog">
+                            <div class="left">
+                                <?php if ($image_url): ?>
+                                    <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image_alt); ?>">
+                                <?php endif; ?>
+                            </div>
+                            <div class="right">
+                                <?php if ($title): ?>
+                                    <div class="title"><?php echo esc_html($title); ?></div>
+                                <?php endif; ?>
+                                <?php if ($description): ?>
+                                    <div class="description"><?php echo esc_html($description); ?></div>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
         </div>
-    </div>
 </section>
 <section class="slider">
     <div class="feedback">

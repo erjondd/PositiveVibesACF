@@ -7,9 +7,11 @@ Template Name: fundraisers Template
 */
 
 ?>
-<section class="hero">
+<section class="another-hero">
+    <img src="<?php echo get_field('hero_image'); ?>"
+        alt="<?php bloginfo('name'); ?>" class="hero-image">
     <div class="container">
-        <div class="title ">Fundraisers</div>
+        <div class="title"><?php echo get_field('hero_title'); ?></div>
     </div>
 </section>
 <section class="one-section">
