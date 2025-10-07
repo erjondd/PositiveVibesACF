@@ -11,18 +11,18 @@ Template Name: fundraisers Template
     <img src="<?php echo get_field('hero_image'); ?>"
         alt="<?php bloginfo('name'); ?>" class="hero-image">
     <div class="container">
-        <div class="title"><?php echo get_field('hero_title'); ?></div>
+        <div class="title module"><?php echo get_field('hero_title'); ?></div>
     </div>
 </section>
-<section class="one-section">
+<section class="one-section ">
     <div class="container">
-        <div class="title left-align">
+        <div class="title left-align module">
             Positive Vibes Foundation 10th Anniversary Gala Dinner
         </div>
-        <div class="one-subtitle">
+        <div class="one-subtitle module">
             Saturday 12th October 2024
         </div>
-        <div class="one-text">
+        <div class="one-text module">
             <div class="left">
 
                 We are thrilled to announce that, on 12th October 2024, the Positive Vibes Foundation celebrated a milestone—our 10th Anniversary Gala Dinner. Thanks to the incredible generosity of our supporters, we raised an astounding $45,000 in donations.
@@ -47,13 +47,13 @@ Template Name: fundraisers Template
 <section class="one-section">
     <div class="container">
 
-        <div class="title left-align">
+        <div class="title left-align module">
             The Hills Annual Charity Gala Ball 2023 at Bivianos Restaurant Dural
         </div>
-        <div class="one-subtitle">
+        <div class="one-subtitle module">
             Thursday 31st August 2023
         </div>
-        <div class="one-text">
+        <div class="one-text module">
             <div class="left">
                 It was an incredible evening of networking, fundraising, delicious food, music and dance but more importantly it was a night of important conversations about mental health in our community and the role all of us play in helping those around us in their journeys.
 
@@ -78,13 +78,13 @@ Template Name: fundraisers Template
 </section>
 <section class="one-section last">
     <div class="container">
-        <div class="title left-align">
+        <div class="title left-align module">
             The Hills Women's Shed Fashion Parade
         </div>
-        <div class="one-subtitle">
+        <div class="one-subtitle module">
             Thursday 28th April 2022
         </div>
-        <div class="one-text">
+        <div class="one-text module">
             <div class="left">
 
                 Fashion , friends and a good cause! The perfect combination.

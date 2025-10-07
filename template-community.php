@@ -11,15 +11,15 @@ Template Name: community Template
     <img src="<?php echo get_field('hero_image'); ?>"
         alt="<?php bloginfo('name'); ?>" class="hero-image">
     <div class="container">
-        <div class="title"><?php echo get_field('hero_title'); ?></div>
+        <div class="title module"><?php echo get_field('hero_title'); ?></div>
     </div>
 </section>
 <section class="section">
     <div class="container">
-        <div class="title">
+        <div class="title module">
             Community engagement at Castle Hill Library
         </div>
-        <div class="text">
+        <div class="text module">
             The Positive Vibes Foundation holds regular community talks at the Castle Hill Library to promote positive mental health. <br /><br />
             In the past, topics have included:<br /><br />
             <ul>
@@ -51,14 +51,14 @@ Template Name: community Template
 </section>
 <section class="library">
     <div class="container">
-        <div class="title">
+        <div class="title module">
             Are you a library or community facility interested in hosting a mental health talk?
         </div>
-        <div class="subtitle">
+        <div class="subtitle module">
             Reach out to us for more information.
         </div>
-        <div class="button">
-            <a href="">
+        <div class="button module">
+            <a href="<?php echo get_permalink( get_page_by_path('contact') ); ?>">
                 Contact Us
             </a>
         </div>
@@ -66,15 +66,15 @@ Template Name: community Template
 </section>
 <section class="library-pics">
     <div class="container">
-        <div class="library-image">
+        <div class="library-image module">
             <img src="<?php echo get_template_directory_uri(); ?>/images/library1.png"
                 alt="<?php bloginfo('name'); ?>">
         </div>
-        <div class="library-image">
+        <div class="library-image module">
             <img src="<?php echo get_template_directory_uri(); ?>/images/library2.png"
                 alt="<?php bloginfo('name'); ?>">
         </div>
-        <div class="library-image">
+        <div class="library-image module">
             <img src="<?php echo get_template_directory_uri(); ?>/images/library3.png"
                 alt="<?php bloginfo('name'); ?>">
         </div>
@@ -82,57 +82,58 @@ Template Name: community Template
 </section>
 <section class="upmarmet-lib">
     <div class="container">
-        <div class="left">
-            <div class="title-u">
+        <div class="left ">
+            <div class="title-u module">
                 UPmarket
             </div>
-            <div class="subttitle-u">
+            <div class="subttitle-u module">
                 Every 4th Sunday at Castle Hill Showground
             </div>
-            <div class="more-text-u">
+            <div class="more-text-u module">
                 UPmarket is held on the fourth Sunday of each month at The Terraces at the Castle Hill Showground and features more than 60 quality market stalls. Come visit us!
             </div>
-            <div class="button">
-                <a href="">
+            <div class="button module">
+                         <a href="<?php echo get_permalink( get_page_by_path('upmarket') ); ?>">
+
                     Check Website
                 </a>
             </div>
         </div>
-        <div class="right">
+        <div class="right module">
             <img src="<?php echo get_template_directory_uri(); ?>/images/upmarkett.png"
                 alt="<?php bloginfo('name'); ?>">
         </div>
     </div>
 </section>
-<section class="past-events">
+<section class="past-events ">
     <div class="container">
-        <div class="title-p">
+        <div class="title-p module">
             Past Community Events
         </div>
-        <div class="subtitle-p">
+        <div class="subtitle-p module">
             Aside from the Positive Vibes Foundation’s main four programs, we have also been involved in other events, including:
         </div>
         <div class="all-past-events">
             <div class="one-past-event">
-                <div class="left-p">
-                    <div class="title-pp">
+                <div class="left-p module">
+                    <div class="title-pp module">
                         Castle Hill Rotary Club’s Cross Country Challenge​
                     </div>
-                    <div class="subtitle-pp">
+                    <div class="subtitle-pp module">
                         We supported Rotary by taking part in their annual cross country event on the ground, while raising funds for our mental health initiatives.
                     </div>
                 </div>
-                <div class="right-p">
+                <div class="right-p module">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/upmarkett1.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
             </div>
             <div class="one-past-event">
-                <div class="left-p">
-                    <div class="title-pp">
+                <div class="left-p module">
+                    <div class="title-pp module">
                         Bunnings Charity Christmas Night Market​
                     </div>
-                    <div class="subtitle-pp">
+                    <div class="subtitle-pp module">
                         Who doesn’t love a Bunnings’ sausage sizzle? Positive Vibes gets involved in this annual market, selling merchandise made by The Hills Women’s Shed.
                     </div>
                 </div>
@@ -141,7 +142,7 @@ Template Name: community Template
                         alt="<?php bloginfo('name'); ?>">
                 </div>
             </div>
-            <div class="one-past-event">
+            <div class="one-past-event module">
                 <div class="left-p">
                     <div class="title-pp">
                         Multicultural Mental Health Forum​
@@ -154,7 +155,7 @@ Template Name: community Template
                         alt="<?php bloginfo('name'); ?>">
                 </div>
             </div>
-            <div class="one-past-event">
+            <div class="one-past-event module">
                 <div class="left-p">
                     <div class="title-pp">
                         Supporting Afghan Refugees

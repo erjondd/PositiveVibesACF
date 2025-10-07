@@ -16,13 +16,13 @@ $donation_link = get_field('donation_button_url'); // returns array
     <img src="<?php echo get_field('hero_image'); ?>"
         alt="<?php bloginfo('name'); ?>" class="hero-imagee">
     <div class="container">
-        <div class="subtitle">
+        <div class="subtitle module">
             <?php the_field('hero_title'); ?>
         </div>
-        <div class="title">
+        <div class="title module">
             <?php the_field('hero_subtitle'); ?>
         </div>
-        <div class="button">
+        <div class="button module">
             <a href="<?php echo $link ?>">
                 <?php the_field('hero_button_text'); ?>
             </a>
@@ -36,7 +36,7 @@ $donation_link = get_field('donation_button_url'); // returns array
                 <?php while (have_rows('logos')) : the_row();
                     $logo = get_sub_field('image');
                     if (!empty($logo)): ?>
-                        <div class="one-logo">
+                        <div class="one-logo module">
                             <img src="<?php echo esc_url($logo); ?>"
                                 alt="<?php bloginfo('name'); ?>">
                         </div>
@@ -54,7 +54,7 @@ $donation_link = get_field('donation_button_url'); // returns array
                     $title = get_sub_field('title');
                     $subtitle = get_sub_field('description');
                 ?>
-                    <div class="one-rect">
+                    <div class="one-rect module">
                         <?php if ($title): ?>
                             <div class="title"><?php echo esc_html($title); ?></div>
                         <?php endif; ?>
@@ -69,7 +69,7 @@ $donation_link = get_field('donation_button_url'); // returns array
                     $title = get_sub_field('title');
                     $subtitle = get_sub_field('description');
                 ?>
-                    <div class="one-rect">
+                    <div class="one-rect module">
                         <?php if ($title): ?>
                             <div class="title"><?php echo esc_html($title); ?></div>
                         <?php endif; ?>
@@ -84,7 +84,7 @@ $donation_link = get_field('donation_button_url'); // returns array
                     $title = get_sub_field('title');
                     $subtitle = get_sub_field('description');
                 ?>
-                    <div class="one-rect">
+                    <div class="one-rect module">
                         <?php if ($title): ?>
                             <div class="title"><?php echo esc_html($title); ?></div>
                         <?php endif; ?>
@@ -99,7 +99,7 @@ $donation_link = get_field('donation_button_url'); // returns array
                     $title = get_sub_field('title');
                     $subtitle = get_sub_field('description');
                 ?>
-                    <div class="one-rect">
+                    <div class="one-rect module">
                         <?php if ($title): ?>
                             <div class="title"><?php echo esc_html($title); ?></div>
                         <?php endif; ?>
@@ -110,7 +110,7 @@ $donation_link = get_field('donation_button_url'); // returns array
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
-        <div class="bottom">
+        <div class="bottom module">
             <?php the_field('under_rectangle_text'); ?>
         </div>
     </div>
@@ -118,7 +118,7 @@ $donation_link = get_field('donation_button_url'); // returns array
 <section class="impact">
     <div class="container">
         <div class="top">
-            <div class="title"> <?php the_field('impact_title'); ?>
+            <div class="title module"> <?php the_field('impact_title'); ?>
             </div>
             <div class="our-blogs">
 
@@ -135,7 +135,7 @@ $donation_link = get_field('donation_button_url'); // returns array
                             $image_url = $image;
                         }
                     ?>
-                        <div class="one-blog">
+                        <div class="one-blog module">
                             <div class="left">
                                 <?php if ($image_url): ?>
                                     <img src="<?php echo esc_url($image_url); ?>">
@@ -170,7 +170,7 @@ $donation_link = get_field('donation_button_url'); // returns array
                         $image_url = $image;
                     }
                 ?>
-                    <div class="one-rect">
+                    <div class="one-rect module">
                         <?php if ($image_url): ?>
                             <div class="image">
                                 <img src="<?php echo esc_url($image_url); ?>">
@@ -204,13 +204,13 @@ $donation_link = get_field('donation_button_url'); // returns array
 </section>
 <section class="donate">
     <div class="container">
-        <div class="title">
+        <div class="title module">
             <?php the_field('donation_title'); ?>
         </div>
-        <div class="subtitle">
+        <div class="subtitle module">
             <?php the_field('donation_subtitle'); ?>
         </div>
-        <div class="button">
+        <div class="button module">
 
             <a href="
              <?php the_field('donation_button_url'); ?>">
@@ -239,7 +239,7 @@ $donation_link = get_field('donation_button_url'); // returns array
                             $image_alt = get_bloginfo('name');
                         }
                     ?>
-                        <div class="one-blog">
+                        <div class="one-blog module">
                             <div class="left">
                                 <?php if ($image_url): ?>
                                     <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image_alt); ?>">
@@ -262,18 +262,18 @@ $donation_link = get_field('donation_button_url'); // returns array
 <section class="slider">
     <div class="feedback">
         <div class="left">
-            <div class="title">
+            <div class="title module">
                 Feedback about the foundation
             </div>
-            <div class="description">
+            <div class="description module">
                 “I retired in March 2022 and have been attending The Hills Women's Shed for about 3 months, I heard about THWS through a friend who has been going for some time. I look forward to Thursdays and doing interesting crafts, having cooking lessons and learning all sorts of new things, but what I especially like is meeting new people and making new friends. It's a safe, caring environment and I'm so happy to be included.”
             </div>
             <div class="info">
-                <div class="left-info">
+                <div class="left-info module">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/circle.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
-                <div class="right-info">
+                <div class="right-info module">
                     <div class="info-text">
                         <div class="title-info">
                             Heather Ross
@@ -295,7 +295,7 @@ $donation_link = get_field('donation_button_url'); // returns array
                 </div>
             </div>
         </div>
-        <div class="right">
+        <div class="right module">
             <img src="<?php echo get_template_directory_uri(); ?>/images/hero2.png"
                 alt="<?php bloginfo('name'); ?>">
         </div>

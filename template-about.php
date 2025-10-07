@@ -11,16 +11,16 @@ Template Name: About Template
     <img src="<?php echo get_field('hero_image'); ?>"
         alt="<?php bloginfo('name'); ?>" class="hero-image">
     <div class="container">
-        <div class="title"><?php echo get_field('hero_title'); ?></div>
+        <div class="title module"><?php echo get_field('hero_title'); ?></div>
     </div>
 </section>
 <section class="about">
     <div class="container">
         <div class="left">
-            <div class="title">
+            <div class="title module">
                 About the Positive Vibes Foundation
             </div>
-            <div class="description">
+            <div class="description module">
                 The Positive Vibes Foundation was formed in 2014 by a psychiatrist working in Castle Hill.
                 <br /><br />
                 The charity was driven by the need to eliminate the stigma around mental health, which at the time was preventing many from seeking treatment.
@@ -30,7 +30,7 @@ Template Name: About Template
                 Through Positive Vibes’ four core programs – The Hills Women’s Shed, Paw Visits, the Young Healthy Minds Forum and Community Engagement – we are working to make deeper connections and increase the conversation around mental wellbeing.
             </div>
         </div>
-        <div class="right">
+        <div class="right module">
             <img src="<?php echo get_template_directory_uri(); ?>/images/about.png"
                 alt="<?php bloginfo('name'); ?>">
         </div>
@@ -39,7 +39,7 @@ Template Name: About Template
 <section class="under-about">
     <div class="container">
         <div class="all-rect">
-            <div class="one-rect">
+            <div class="one-rect module">
                 <div class="title">
                     Our Vision
                 </div>
@@ -47,11 +47,11 @@ Template Name: About Template
                     To promote positive mental health and wellbeing in communities through connections and conversations.
                 </div>
             </div>
-            <div class="one-rect">
+            <div class="one-rect module">
                 <div class="title">
                     Our Mission
                 </div>
-                <div class="subtitle">
+                <div class="subtitle module">
                     <ul>
                         <li>
                             Embrace a holistic approach to address mental illness and wellbeing at home, work and school.
@@ -71,7 +71,7 @@ Template Name: About Template
                     </ul>
                 </div>
             </div>
-            <div class="one-rect">
+            <div class="one-rect module">
                 <div class="title">
                     Our Values
 
