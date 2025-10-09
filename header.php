@@ -25,10 +25,10 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+    <!-- 
     <div class="top-head">
         You can make an impact. <a href="">Donate</a>
-    </div>
+    </div> -->
     <header class="header">
         <div class="container">
             <div class="hamburger">
@@ -59,7 +59,7 @@
                 ?>
             </div>
             <div class="button">
-                <a href="">
+                <a href="https://checkout.square.site/merchant/N10F92A8J62CV/checkout/L3YOCAIPTLA3V7HVA6BQL3ML" target="_blank" rel="noopener">
                     Donate
                 </a>
             </div>

@@ -49,7 +49,7 @@ Template Name: paw Template
             Research shows dogs can improve both mental and physical health in humans.*
         </div>
         <div class="button module">
-            <a href="">
+            <a href="<?php echo get_permalink(get_page_by_path(page_path: 'contact')); ?>">
                 EXPRESS INTEREST
             </a>
         </div>

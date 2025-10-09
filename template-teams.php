@@ -48,18 +48,6 @@ Template Name: Teams Template
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title module">
-                    Albert Seah FCA, CTA, LL.M, LL.B, B.Ec (Acctg)
-                </div>
-                <div class="a-position module">
-                    Director
-                </div>
-            </div>
-            <div class="a-team">
-                <div class="image module">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team4.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="a-title module">
                     Bob Croft (Qijian Ge) MAMI, CPM
                 </div>
                 <div class="a-position module">
@@ -68,14 +56,26 @@ Template Name: Teams Template
             </div>
             <div class="a-team">
                 <div class="image module">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team4.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="a-title module">
+                    Brooke Collins OAM, MAICD
+                </div>
+                <div class="a-position module">
+                    Director
+                </div>
+            </div>
+            <div class="a-team">
+                <div class="image module">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/team5.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title module">
-                    Albert Seah FCA, CTA, LL.M, LL.B, B.Ec (Acctg)
+                    Dr Juanita Ruiz, FRACGP, MB BS, AKC, B Sc, LRSM
                 </div>
                 <div class="a-position module">
-                    Director
+                    Community Liaison Officer
                 </div>
             </div>
             <div class="a-team">
@@ -84,7 +84,8 @@ Template Name: Teams Template
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title module">
-                    Brooke Collins OAM, MAICD </div>
+                    Jeanette Farrell OAM
+                </div>
                 <div class="a-position module">
                     Director
                 </div>
@@ -95,28 +96,6 @@ Template Name: Teams Template
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title module">
-                    Dr Juanita Ruiz, FRACGP, MB BS, AKC, B Sc, LRSM </div>
-                <div class="a-position module">
-                    Community Liaison Officer
-                </div>
-            </div>
-            <div class="a-team">
-                <div class="image module">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team8.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="a-title module">
-                    Jeanette Farrell OAM </div>
-                <div class="a-position module">
-                    Director
-                </div>
-            </div>
-            <div class="a-team">
-                <div class="image module">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team9.png"
-                        alt="<?php bloginfo('name'); ?>">
-                </div>
-                <div class="a-title module">
                     Mario Rodrigues FCA, ACA, B Sc (Econ) </div>
                 <div class="a-position module">
                     Chair
@@ -124,7 +103,7 @@ Template Name: Teams Template
             </div>
             <div class="a-team">
                 <div class="image module">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team10.png"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team8.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title module">
@@ -135,7 +114,7 @@ Template Name: Teams Template
             </div>
             <div class="a-team">
                 <div class="image module">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/team11.png"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team9.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title module">
@@ -146,13 +125,35 @@ Template Name: Teams Template
             </div>
             <div class="a-team">
                 <div class="image module">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team10.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="a-title module">
+                    Peter Truong</div>
+                <div class="a-position module">
+                    Director
+                </div>
+            </div>
+            <div class="a-team">
+                <div class="image module">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/team11.png"
+                        alt="<?php bloginfo('name'); ?>">
+                </div>
+                <div class="a-title module">
+                    Queenie Tran </div>
+                <div class="a-position module">
+                    Program Manager – The Hills Women’s Shed B.Couns (Hons I), Registered Counsellor (ACA)
+                </div>
+            </div>
+            <div class="a-team">
+                <div class="image module">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/team12.png"
                         alt="<?php bloginfo('name'); ?>">
                 </div>
                 <div class="a-title module">
-                    Peter Truong </div>
+                    Zahra Shafigh</div>
                 <div class="a-position module">
-                    Director
+                    Operation Manager
                 </div>
             </div>
         </div>

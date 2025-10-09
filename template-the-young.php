@@ -92,7 +92,7 @@ Template Name: the young Template
             If you would like your school to be involved with The Young Healthy Minds Forum, please get in touch. 
         </div>
         <div class="button module">
-            <a href="">
+          <a href="<?php echo get_permalink( get_page_by_path(page_path: 'contact') ); ?>">
                 REGISTER
             </a>
         </div>

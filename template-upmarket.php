@@ -55,7 +55,7 @@ Template Name: upmarket Template
                 UPmarket is held on the fourth Sunday of each month at The Terraces at the Castle Hill Showground and features more than 60 quality market stalls. Come visit us!
             </div>
             <div class="button module">
-                <a href="">
+                <a href="https://www.thehillsupmarket.com.au/" target="_blank" rel="noopener">
                     Check Website
                 </a>
             </div>

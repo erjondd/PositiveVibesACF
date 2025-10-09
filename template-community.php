@@ -58,7 +58,7 @@ Template Name: community Template
             Reach out to us for more information.
         </div>
         <div class="button module">
-            <a href="<?php echo get_permalink( get_page_by_path('contact') ); ?>">
+            <a href="<?php echo get_permalink(get_page_by_path('contact')); ?>">
                 Contact Us
             </a>
         </div>
@@ -93,7 +93,7 @@ Template Name: community Template
                 UPmarket is held on the fourth Sunday of each month at The Terraces at the Castle Hill Showground and features more than 60 quality market stalls. Come visit us!
             </div>
             <div class="button module">
-                         <a href="<?php echo get_permalink( get_page_by_path('upmarket') ); ?>">
+                <a href="https://www.thehillsupmarket.com.au/" target="_blank" rel="noopener">
 
                     Check Website
                 </a>
